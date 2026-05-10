@@ -1,0 +1,28 @@
+/* Google Font Dahil Etme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Menü elemanları arası boşluk */
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Form elemanları arası boşluk */
+    max-width: 400px;
+    margin: 0 auto;
+}

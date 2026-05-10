@@ -1,0 +1,70 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #025125;
+
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Menü elemanları arası boşluk */
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-links a:hover {
+    color: #d81074;
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Form elemanları arası boşluk */
+    max-width: 400px;
+    margin: 0 auto;
+}
+.appointment-form input {
+    padding: 10px;
+    border: 1px solid #07af3c;
+    border-radius: 5px;
+}
+.appointment-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #025125;
+    color: white;
+    cursor: pointer;
+}
+div.giris{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #3e8f58;
+}
+div.kayit{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #3e8f58;
+}
+div.giris a, div.kayit a{
+    text-decoration: none;
+    color: #030303;
+}
+div.giris a:hover, div.kayit a:hover{
+    color: #10af3d;
+}
+div.giris{
+    margin: 15px auto;
+}
