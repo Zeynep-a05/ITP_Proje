@@ -1,10 +1,14 @@
-.navbar{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #025125;
-
+    background-color: #768f7e;
 }
 .nav-links {
     display: flex;
@@ -13,7 +17,7 @@
 }
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #e5e2e2;
 }
 .nav-links a:hover {
     color: #d81074;
@@ -38,7 +42,7 @@ section {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #025125;
+    background-color: #589069;
     color: white;
     cursor: pointer;
 }
@@ -63,8 +67,51 @@ div.giris a, div.kayit a{
     color: #030303;
 }
 div.giris a:hover, div.kayit a:hover{
-    color: #10af3d;
+    color: #d81074;
 }
 div.giris{
     margin: 15px auto;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #010502;
+}   
+nav .logo img {
+    width: 100px; /* Logo boyutu */
+    height: auto;
+    margin-right: 10px; /* Logo ile metin arasındaki boşluk */
+}
+div.kayit{
+    margin: 15px auto;
+}
+footer {
+    background-color: #768f7e;
+    color: #e5e2e2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+footer li a {
+    text-decoration: none;
+    color: #1a6695;
+}
+footer li a:hover {
+    color: #d81074;
+}
+footer h2 {
+    color: black;
+}
+footer p {
+    color: #031e2f;
+}   
+body {
+    background-color: beige;
 }

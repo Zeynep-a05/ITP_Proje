@@ -1,0 +1,143 @@
+/* Google Font Dahil Etme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #768f7e;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Menü elemanları arası boşluk */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #e5e2e2;
+    font-weight: 500;
+}
+.nav-links li a:hover {
+    color: #d81074; /* Hover efekti için renk */
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #010502;
+}   
+nav .logo img {
+    width: 100px; /* Logo boyutu */
+    height: auto;
+    margin-right: 10px; /* Logo ile metin arasındaki boşluk */
+}
+
+
+/*gövde Kısmı*/
+
+.product-tag {
+    background-color: #548580;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.options {
+    display: flex;
+    gap: 20px; /* Seçenekler arasındaki boşluk */
+    padding: 20px;
+    background-color: #b30074;
+    justify-content: center;
+    margin-top: 20px;
+}
+.options button {
+    padding: 10px 20px;
+    background-color: #bf60e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.products {
+    display: flex;
+    gap: 20px; /* Ürün kartları arasındaki boşluk */
+}
+.product-card {
+    margin-top: 20px;
+    background-color: #768f7e;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.product-card img {
+    width: 100%;       /* Kartın genişliğine tam otursun */
+    height: 250px;      /* Tüm resimler için sabit bir yükseklik (değeri değiştirebilirsin) */
+    object-fit: cover;  /* Resmin oranını bozmadan alanı kaplamasını sağlar (en önemli kısım!) */
+    border-radius: 8px; /* İsteğe bağlı: köşeleri yumuşatır */
+}
+.product-grid{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    gap: 10px;
+}
+div.product-card button {
+    padding: 10px 20px;
+    background-color: #b30074;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div.product-card button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ürün kartları arasındaki boşluk */
+    justify-content: center; /* Ürün kartlarını ortala */
+}
+
+
+
+
+/* footer bölümü */
+footer {
+    background-color: #768f7e;
+    color: #e5e2e2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+footer li a {
+    text-decoration: none;
+    color: #1a6695;
+}
+footer li a:hover {
+    color: #d81074;
+}
+footer h2 {
+    color: black;
+}
+footer p {
+    color: #031e2f;
+}   
+body {
+    background-color: beige;
+}

@@ -3,38 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Botaniks - Giriş & Kayıt</title>
     <link rel="stylesheet" href="login&giris.css">
+    <link rel="icon" href="img/logo2.png" type="image/png">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">BOTANİKS</div>
+        <div class="logo"> <img src="img/logo.png" alt="Botaniks Logo">Botaniks</div>
         <ul class="nav-links">
-            <li><a href="#">Ana Sayfa</a></li>
-            <li><a href="#">Ürünler</a></li>
-            <li><a href="#">Sepet</a></li>
-            <li><a href="#">Giriş Yap</a></li>
+            <li><a href="anasayfam.html">Ana Sayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="giris.html">Giriş Yap</a></li>
         </ul>
     </nav>
-    <div class="giris"><section class="contact-section">
-        <form class="appointment-form">
-            <input type="text" placeholder="Kullanıcı Adı veya Mail Adresi">
-            <input type="password" placeholder="Şifre"> 
-            <button type="submit">Giriş Yap</button>
-                Hesabınız yok mu? <a href="#">Kayıt Ol</a>
-        </form>
-    </section>
+
+    <div class="giris" id="girisFormu">
+        <section class="contact-section">
+            <form class="appointment-form" onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Kullanıcı Adı veya Mail Adresi">
+                <input type="password" placeholder="Şifre"> 
+                <button type="submit">Giriş Yap</button>
+                Hesabınız yok mu? <a href="javascript:void(0)" onclick="formDegistir()">Kayıt Ol</a>
+            </form>
+        </section>
     </div>
-    <div class="kayit"><section class="contact-section">
-        <form class="appointment-form">
-            <input type="text" placeholder="Kullanıcı Adı">
-            <input type="password" placeholder="Şifre">
-            <input type="email" placeholder="E-posta">
-            <input type="text" placeholder="Telefon Numarası">
-            <button type="submit">Kayıt Ol</button>
-            Hesabınız var mı? <a href="#">Giriş Yap</a>
-        </form>
-    </section>
+
+    <div class="kayit" id="kayitFormu" style="display: none;">
+        <section class="contact-section">
+            <form class="appointment-form" onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Kullanıcı Adı">
+                <input type="password" placeholder="Şifre">
+                <input type="email" placeholder="E-posta">
+                <input type="text" placeholder="Telefon Numarası">
+                <button type="submit">Kayıt Ol</button>
+                Hesabınız var mı? <a href="javascript:void(0)" onclick="formDegistir()">Giriş Yap</a>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        function formDegistir() {
+            const giris = document.getElementById('girisFormu');
+            const kayit = document.getElementById('kayitFormu');
+
+            if (giris.style.display === "none") {
+                giris.style.display = "block";
+                kayit.style.display = "none";
+            } else {
+                giris.style.display = "none";
+                kayit.style.display = "block";
+            }
+        }
+    </script>
 </body>
+<!-- Footer -->
+<footer>
+    <section class="iletisim">
+        <div class="content">
+            <h2>İletişim</h2>
+            <p>Bizimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz:</p>
+            <ul>
+                <li>Email: <a href="mailto:info@botaniks.com">info@botaniks.com</a></li>
+                <li>Telefon: <span style="color: #1a6695;">0212 123 45 67</span></li>
+            </ul>
+        </div>
+
+    </section>
+    <p>&copy; 2026 Botaniks. Tüm hakları saklıdır.</p>
+</footer>
 </html>
-         
+</html>
