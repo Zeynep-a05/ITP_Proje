@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
-
+/*body */
 body {
     font-family: 'Poppins', sans-serif;
 }
+body {
+    background-color: beige;
+}
+/* Navigasyon barı */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,6 +26,19 @@ body {
 .nav-links a:hover {
     color: #d81074;
 }
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #010502;
+}   
+nav .logo img {
+    width: 100px; /* Logo boyutu */
+    height: auto;
+    margin-right: 10px; /* Logo ile metin arasındaki boşluk */
+}
+/* form */
 section {
     padding: 50px;
     text-align: center;
@@ -72,21 +89,11 @@ div.giris a:hover, div.kayit a:hover{
 div.giris{
     margin: 15px auto;
 }
-nav .logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 500;
-    color: #010502;
-}   
-nav .logo img {
-    width: 100px; /* Logo boyutu */
-    height: auto;
-    margin-right: 10px; /* Logo ile metin arasındaki boşluk */
-}
+
 div.kayit{
     margin: 15px auto;
 }
+/* Footer Stilleri */
 footer {
     background-color: #768f7e;
     color: #e5e2e2;
@@ -112,6 +119,4 @@ footer h2 {
 footer p {
     color: #031e2f;
 }   
-body {
-    background-color: beige;
-}
+

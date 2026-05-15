@@ -21,7 +21,7 @@
     font-weight: 500;
 }
 .nav-links li a:hover {
-    color: #d81074; /* Hover efekti için renk */
+    color: #d81074; 
 }
 nav .logo {
     display: flex;

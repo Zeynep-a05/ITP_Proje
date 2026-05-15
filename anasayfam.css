@@ -25,7 +25,7 @@ body {
     font-weight: 500;
 }
 .nav-links li a:hover {
-    color: #d81074; /* Hover efekti için renk */
+    color: #d81074; 
 }
 nav .logo {
     display: flex;
@@ -39,6 +39,7 @@ nav .logo img {
     height: auto;
     margin-right: 10px; /* Logo ile metin arasındaki boşluk */
 }
+/* Hero Bölümü Stilleri */
 .Hero {
     background-image: url('img/hero.png');
     background-size: cover;
@@ -57,10 +58,11 @@ nav .logo img {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
 }
+/* Ürün Kartları Stilleri */
 .products {
     display: flex;
-    gap: 20px; /* Ürün kartları arasındaki boşluk */
-    justify-content: center;
+    gap: 20px; /* Ürün kartları arasındaki boşluk bırakmak için */
+    justify-content: center; /*kartları ortalamak için*/
     flex-wrap: wrap; /* Ekran küçüldüğünde alt satıra geçmesi için */
     margin-top: 20px; /* Ürünler ile başlık arasındaki boşluk */
 }
@@ -74,8 +76,8 @@ nav .logo img {
 }
 .product-card img {
     width: 100%;       /* Kartın genişliğine tam otursun */
-    height: 250px;      /* Tüm resimler için sabit bir yükseklik (değeri değiştirebilirsin) */
-    object-fit: cover;  /* Resmin oranını bozmadan alanı kaplamasını sağlar (en önemli kısım!) */
+    height: 250px;      /* Tüm resimler için sabit bir yükseklik */
+    object-fit: cover;  /* Resmin oranını bozmadan alanı kaplamasını sağlar*/
     border-radius: 8px; /* İsteğe bağlı: köşeleri yumuşatır */
 }
 
@@ -105,6 +107,7 @@ div.content h2 {
 body {
     background-color: #e9ecbb;
 }
+/* Footer Stilleri */
 footer {
     background-color: #768f7e;
     color: #e5e2e2;
